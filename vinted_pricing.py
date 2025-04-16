@@ -20,4 +20,4 @@ def vinted_price_stats(q: str, n: int = 50):
     # Try both page 1 and page 2 to bypass lazy loading
     for page in (1, 2):
         try:
-            res = scraper.get(f"{base_api}&page={page}", timeout_
+res = scraper.get(f"{base_api}&page={page}", timeout=10)
